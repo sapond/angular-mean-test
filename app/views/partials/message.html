@@ -1,0 +1,13 @@
+
+<p>This is the message view.</p>
+<div ng-controller="MessageCtrl">
+    <div ng-repeat="message in messages | orderBy:'message.ts'">
+        <h4>{{message.message}}<span ng-click="remove(message)" class="glyphicon glyphicon-remove"></span></h4>
+    </div>
+
+    <form ng-submit="addMessage()">
+        <input type="text" ng-model="messageText"  size="30"
+            placeholder="add new message here">
+        <input class="btn-primary" type="submit" value="add">
+    </form>
+</div>
