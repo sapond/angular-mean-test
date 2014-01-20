@@ -2,7 +2,7 @@
 'use strict';
 angular.module('meanApp')
     .factory('Message', function($resource) {
-        return $resource('/api/message:messageId', { _id: '@_id' });
+        return $resource('/mean/api/message:messageId', { _id: '@_id' });
     })
         .controller('MessageCtrl', function ($scope, Message) {
             $scope.messages = Message.query();

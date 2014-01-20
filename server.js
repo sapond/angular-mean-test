@@ -1,7 +1,7 @@
-'use strict';
-
+'use strict'; 
 // Module dependencies.
 var express = require('express'),
+    path = require('path'),
     path = require('path'),
     fs = require('fs');
 
@@ -32,8 +32,6 @@ app.get('/api/awesomeThings', api.awesomeThings);
 app.get('/api/message', api.message);
 app.post('/api/message', api.messagePost);
 app.delete('/api/message', api.deleteMessage);
-
-
 
 // Angular Routes
 app.get('/partials/*', index.partials);

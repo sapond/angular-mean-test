@@ -13,7 +13,7 @@ angular.module('meanApp', [
     $stateProvider
       .state('main', {
         url: '/main',
-        controller: 'MainCtrl',
+        //controller: 'MainCtrl',
         templateUrl: 'partials/main.html'
        })
       .state('main.about', {
